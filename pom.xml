@@ -22,13 +22,15 @@
     </dependencies>
 
     <build>
-        <plugin>
-            <configuration>
-                <includes>
-                    <include>**/*Test.java</include>
-                </includes>
-            </configuration>
-        </plugin>
+        <plugins>
+            <plugin>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>
