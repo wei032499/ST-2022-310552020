@@ -59,7 +59,7 @@ public class PriorityQueueTest {
     public void whenExceptionThrown_thenOfferEIsNull() {
         Exception exception = assertThrows(NullPointerException.class,()->{
             PriorityQueue<Integer> test = new PriorityQueue<Integer>();
-            test.add(null);
+            // test.add(null);
         });
     }
 
@@ -67,7 +67,6 @@ public class PriorityQueueTest {
     public void whenExceptionThrown_thenInitialCapacityNotGreaterThanOne() {
         Exception exception = assertThrows(IllegalArgumentException.class,()->{
             PriorityQueue<Integer> test = new PriorityQueue<Integer>(0);
-            // test.add(null);
         });
     }
 
